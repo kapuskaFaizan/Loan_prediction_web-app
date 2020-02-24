@@ -1,0 +1,12 @@
+,index,0,loan_id
+0,Faizan,Name,1
+1,Male,gender,2
+2,Yes,married,3
+3,0,dependents,4
+4,Graduate,education,5
+5,No,selfemployed,6
+6,0.0,co_applicantincome,7
+7,360.0,loan_amountterm,8
+8,Urban,property_area,9
+9,sdf,credit_history,10
+10,0.0,applicantincome,11
