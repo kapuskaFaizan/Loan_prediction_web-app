@@ -43,7 +43,7 @@ def result():
     x = transform_predict([jab])
     y =['yes' if x[0] == 1 else 'no' for i in x]
     
-    return {'predtiction : ': str(y)}#{'predtiction : ': x}
+    return {'predtiction : ': str(y)}
 
 if __name__ == '__main__':
    app.run(debug = True)
