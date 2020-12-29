@@ -26,16 +26,22 @@ y = [1 if x == 'Y' else x for x in lab]
 Train_X, Test_X, Train_Y, Test_Y = train_test_split(x,y , test_size = 0.2)
 
 md = svm.SVC(C=1.0, kernel='linear', degree=3, gamma='auto')
+
 md.fit(Train_X , Train_Y)
+
 pred = md.predict(Test_X)
-print(x)
+
 print("SVM Accuracy Score -> ",accuracy_score(pred, Test_Y)*100)
 print(classification_report(Test_Y,pred))
 print(type(data['CoapplicantIncome'][0]))
+
 new = [['Male','Yes', '0' , 'Graduate','No', 0.0 , 360.0 ,'Urban']]
+
 enc_new = v.transform(new).toarray()
 ans = md.predict(enc_new)
+
 print(ans)
+
 #pickle.dump(v, open("vectorizer.pickle", "wb"))
 #pickle.dump(md, open("model.sav", "wb"))
 #md.predict([])
